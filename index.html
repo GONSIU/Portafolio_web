@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>Portafolio Moderno</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">[FGV]</div>
-            <ul id="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobremi">Sobre mí</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <a href="#" class="btn-header">Descargar CV</a>
-        </nav>
-    </header>
 
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+            <a href="#">FVG</a>  
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO </a></li>
+                    <li><a href="#sobre_mi" onclick="seleccionar()">SOBRE MI </a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO </a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO </a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+<!--INICIO-->
+    <br><br><br>
     <section id="inicio" class="inic">
         <div class="contenedor">
             <div class="conten">
@@ -28,62 +38,87 @@
                 <h1>Hola, soy <span>GONSALO</span></h1>
                 <p>Estudiante de ingenieria Informatica</p>
                 <p><i class="fas fa-map-marker-alt"></i> Oruro, Bolivia</p>
+                <BR>
+                <a href="#" class="btn-header">Descargar CV</a>
             </div>
         </div>
     </section>
 
-    
-
-
-
-    <section id="Sobremi" class="resume-section">
+    <section id="sobre_mi" class="resume-section">
         <div class="container">
             <h2>Sobre Mi </h2>
             <div class="resume-grid">
                 <div class="resume-info">
-                    <p><strong>Edad:</strong> 20 años</p>
-                    <p><strong>Experiencia:</strong> soy estudiante</p>
+                    <h2>Datos personales</h2>
+                    <p><strong>Nacimiento:</strong> 10-01-2004</p>
+                    <p><strong>Ocupacion:</strong> Estudiante</p>
                     <p><strong>Ubicación:</strong> Oruro, Bolivia</p>
-                    <p><strong>Teléfono:</strong> +591 74221152</p>
+                    <p><strong>Correo:</strong> floresgonsalo80@gmail.com</p>
                 </div>
                 <div class="resume-image">
-                    <img src="foto.jpg" alt="Imagen de trabajo">
+                    <h2>Perfiles</h2>
+                    <p><strong>Github:</strong> 
+                        <a href="https://github.com/GONSIU">GONSIU</a>
+                    </p>
+                    <p><strong>Telegram:</strong> 
+                        <a href="https://t.me/FloresGonsalo">Flores Valencia Gonsalo</a>
+                    </p>
+                    <p><strong>Linkedin:</strong> 
+                        <a href="https://www.linkedin.com/in/gonsalo-flores-87349b336/?trk=public-profile-join-page">
+                            floresgonsalo</a>
+                    </p>
+                    <p><strong>Codeforces:</strong> 
+                        <a href="https://codeforces.com/profile/GONSIUU">GONSIUU</a>
+                    </p>
+                    
                 </div>
             </div>
+            <br><br>
+
             <div class="stats-grid">
                 <div class="stat">
-                    <h3>HTLM Y CSS</h3>
+                    <h3>HTLM <i class="fa-brands fa-html5"></i> Y CSS <i class="fa-brands fa-css3-alt"></i>  </h3>
                     <p>60%</p>
                 </div>
                 <div class="stat">
-                    <h3>java</h3>
+                    <h3>Javascript <i class="fa-brands fa-node-js"> </i> </h3>
+                    <p>25%</p>
+                </div>
+
+                <div class="stat">
+                    <h3>Java <i class="fa-brands fa-java"></i></h3>
                     <p>45%</p>
                 </div>
                 <div class="stat">
-                    <h3>c++</h3>
+                    <h3>c++ <i class="fa-brands fa-c"></i></h3>
                     <p>68%</p>
                 </div>
                 <div class="stat">
-                    <h3>trabajo en equipo</h3>
+                    <h3>Comunicacion <i class="fa-solid fa-comments"></i></h3>
                     <p>70%</p>
                 </div>
                 <div class="stat">
-                    <h3>dedicacion</h3>
-                    <p>80%</p>
+                    <h3>Trabajo en equipo <i class="fa-solid fa-handshake-angle"></i></h3>
+                    <p>60%</p>
                 </div>
                 <div class="stat">
-                    <h3>creatividad</h3>
-                    <p>75%</p>
+                    <h3>Creatividad <i class="fa-solid fa-lightbulb"></i></h3>
+                    <p>65%</p>
+                </div>
+                
+                <div class="stat">
+                    <h3>Dedicacion <i class="fa-solid fa-laptop-file"></i></h3>
+                    <p>80%</p>
                 </div>
             </div>
         </div>
+        
     </section>
-
     <section id="portafolio" class="section">
         <div class="container">
             <h2>Portafolio</h2>
             <div class="portfolio-grid">
-                <!-- Aquí puedes agregar tus proyectos -->
+                <!--proyectos -->
                 <div class="project-card">
                     <h3>Proyecto_1</h3>
                     <p>Descripción de tu primer proyecto.</p>
@@ -100,7 +135,7 @@
     <section id="contacto" class="section">
         <div class="container">
             <h2>Contacto</h2>
-            <p>¿Interesado en trabajar juntos? No dudes en <a href="gmail">contactarme</a>.</p>
+            <p>¿Interesado en trabajar juntos? No dudes en <a href="floresgonsalo80@gmail.com">contactarme</a>.</p>
         </div>
     </section>
 
